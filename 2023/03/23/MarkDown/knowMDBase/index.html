@@ -1,0 +1,281 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>快速实现markDown语法的使用 | Welcome to my first blog</title><meta name="author" content="student_zks"><meta name="copyright" content="student_zks"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="8分钟简单了解一下Markdown语法的使用教程,参考网站markdown 标题的使用教程12一个#代表的是代表的是一级标题 两个、甚至三个代表二级和三级标题，以此类推。。。。  &gt;表示引用一个段话 这是一段名人名言,谁说的我说的  无序列表和有序列表的使用 One:有序列表 这是一个无序列表:   this is One this is two  this is three this is">
+<meta property="og:type" content="article">
+<meta property="og:title" content="快速实现markDown语法的使用">
+<meta property="og:url" content="http://example.com/2023/03/23/MarkDown/knowMDBase/index.html">
+<meta property="og:site_name" content="Welcome to my first blog">
+<meta property="og:description" content="8分钟简单了解一下Markdown语法的使用教程,参考网站markdown 标题的使用教程12一个#代表的是代表的是一级标题 两个、甚至三个代表二级和三级标题，以此类推。。。。  &gt;表示引用一个段话 这是一段名人名言,谁说的我说的  无序列表和有序列表的使用 One:有序列表 这是一个无序列表:   this is One this is two  this is three this is">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:published_time" content="2023-03-23T14:06:19.902Z">
+<meta property="article:modified_time" content="2023-03-23T15:10:13.913Z">
+<meta property="article:author" content="student_zks">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2023/03/23/MarkDown/knowMDBase/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'mediumZoom',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '快速实现markDown语法的使用',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-03-23 23:10:13'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+
+if (false) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Welcome to my first blog"><span class="site-name">Welcome to my first blog</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">快速实现markDown语法的使用</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-03-23T14:06:19.902Z" title="发表于 2023-03-23 22:06:19">2023-03-23</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-03-23T15:10:13.913Z" title="更新于 2023-03-23 23:10:13">2023-03-23</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="快速实现markDown语法的使用"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>8分钟简单了解一下Markdown语法的使用教程,参考网站<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/599857933f6e">markdown</a></p>
+<h1 id="标题的使用教程"><a href="#标题的使用教程" class="headerlink" title="标题的使用教程"></a>标题的使用教程</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">一个<span class="comment">#代表的是代表的是一级标题 </span></span><br><span class="line">两个、甚至三个代表二级和三级标题，以此类推。。。。</span><br></pre></td></tr></table></figure>
+
+<h1 id="gt-表示引用一个段话"><a href="#gt-表示引用一个段话" class="headerlink" title="&gt;表示引用一个段话"></a>&gt;表示引用一个段话</h1><blockquote>
+<p>这是一段名人名言,谁说的我说的</p>
+</blockquote>
+<h1 id="无序列表和有序列表的使用"><a href="#无序列表和有序列表的使用" class="headerlink" title="无序列表和有序列表的使用"></a>无序列表和有序列表的使用</h1><blockquote>
+<p>One:有序列表 这是一个无序列表:</p>
+</blockquote>
+<ol>
+<li>this is One</li>
+<li>this is two </li>
+<li>this is three</li>
+<li>this is four </li>
+<li>this is five</li>
+<li>this is six ….</li>
+</ol>
+<blockquote>
+<p>Two:无序列表 这是一个无序列表 使用- 或者 + * :</p>
+</blockquote>
+<ul>
+<li>this is One</li>
+<li>this is two</li>
+</ul>
+<ul>
+<li>this is three ….</li>
+</ul>
+<h1 id="任务列表-报错"><a href="#任务列表-报错" class="headerlink" title="任务列表 报错"></a>任务列表 报错</h1><blockquote>
+<p>任务列表 使用 -[] :</p>
+</blockquote>
+<ul>
+<li>[] 吃饭</li>
+<li><input checked="" disabled="" type="checkbox"> 吃饭</li>
+<li><input checked="" disabled="" type="checkbox"> 吃饭</li>
+</ul>
+<h1 id="代码块的使用-三个-96-加上语言"><a href="#代码块的使用-三个-96-加上语言" class="headerlink" title="代码块的使用 三个&#96;加上语言"></a>代码块的使用 三个&#96;加上语言</h1><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> title=input.<span class="property">value</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(title);</span><br></pre></td></tr></table></figure>
+
+<h1 id="数学公式"><a href="#数学公式" class="headerlink" title="数学公式"></a>数学公式</h1><blockquote>
+<p>$$ 数学公式 $$</p>
+</blockquote>
+<h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><blockquote>
+<p>:在左边表示左对齐 :在中间表示居中 :在右边表示 右对齐</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="left">姓名</th>
+<th align="right">年龄</th>
+<th align="center">成绩</th>
+<th align="left">籍贯</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">张三</td>
+<td align="right">19</td>
+<td align="center">99</td>
+<td align="left">江苏省邳州市宿羊山</td>
+</tr>
+</tbody></table>
+<h1 id="横线的使用"><a href="#横线的使用" class="headerlink" title="横线的使用"></a>横线的使用</h1><hr>
+<h1 id="脚注的使用"><a href="#脚注的使用" class="headerlink" title="脚注的使用"></a>脚注的使用</h1><p>一键三连 <a href="%E7%82%B9%E8%B5%9E%E3%80%81%E6%8A%95%E5%B8%81%E3%80%81%E6%94%B6%E8%97%8F">^三联</a></p>
+<h1 id="链接的使用-文字-（url地址“标题”）"><a href="#链接的使用-文字-（url地址“标题”）" class="headerlink" title="链接的使用  [文字] （url地址“标题”）"></a>链接的使用  [文字] （url地址“标题”）</h1><p><a target="_blank" rel="noopener" href="http://www.baidu.com/" title="一个搜索引擎">百度</a>;</p>
+<blockquote>
+<p>引用链接 使用id <a target="_blank" rel="noopener" href="http://www.baidu.com/" title="搜索">谷歌</a><br> <a target="_blank" rel="noopener" href="http://www.baidu.com/" title="搜索">谷歌</a></p>
+</blockquote>
+<p> 请参考<a href="#%E6%A0%87%E9%A2%98%E7%9A%84%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B">标题1</a></p>
+<h1 id="图片的使用"><a href="#图片的使用" class="headerlink" title="图片的使用"></a>图片的使用</h1><blockquote>
+<p>![]  (链接)</p>
+</blockquote>
+<p><img src="https://www.baidu.com/img/flexible/logo/pc/result.png" alt="qq头像" title="百度一下"></p>
+<h1 id="字体的使用"><a href="#字体的使用" class="headerlink" title="字体的使用"></a>字体的使用</h1><p>指定字体类型： <font face="黑体">我是黑体字</font><br>指定字体大小： <font size=12>我是12号字</font><br>指定字体颜色：<font color=#0099ff>我是蓝色字</font> #0099ff 为颜色的16进制代码<br>指定字体颜色、字号、字体类型<font color=#0099ff size=12 face="黑体">黑体</font></p>
+<h1 id="另类的知识"><a href="#另类的知识" class="headerlink" title="另类的知识"></a>另类的知识</h1><p>斜体 <em>斜体</em><br>加粗 <strong>加粗</strong><br><code>print(5)</code><br>下划线 <u>下划线</u><br>微表情 :grin:<br>下标~~   H<del>2</del>O  H<sub>2</sub>O<br>上标^^  X^2^ 这里没能实 现 采用HTML格式   2<sup>10</sup><br>高亮文字  <mark>这是使用了mark标签</mark></p>
+<p>脚注跳转这里好像不能实现 <a href="%E7%82%B9%E8%B5%9E%E3%80%81%E6%8A%95%E5%B8%81%E3%80%81%E6%94%B6%E8%97%8F">^三联</a>:点赞、投币、收藏</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://example.com">student_zks</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2023/03/23/MarkDown/knowMDBase/">http://example.com/2023/03/23/MarkDown/knowMDBase/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">Welcome to my first blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/03/23/MyFirstPage/03.test/" title=""><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info"></div></div></a></div><div class="next-post pull-right"><a href="/2023/03/23/MyFirstPage/02.two/" title="welcome to second"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">welcome to second</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">student_zks</div><div class="author-info__description">这是第一个网站</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Zhangzhangks"><i class="fab fa-github"></i><span>关注我</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Zhangzhangks" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:xxxxxx@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://music.163.com/" target="_blank" title="music"><i class="fas fa-music"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%A0%87%E9%A2%98%E7%9A%84%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B"><span class="toc-number">1.</span> <span class="toc-text">标题的使用教程</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#gt-%E8%A1%A8%E7%A4%BA%E5%BC%95%E7%94%A8%E4%B8%80%E4%B8%AA%E6%AE%B5%E8%AF%9D"><span class="toc-number">2.</span> <span class="toc-text">&gt;表示引用一个段话</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8%E5%92%8C%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">3.</span> <span class="toc-text">无序列表和有序列表的使用</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BB%BB%E5%8A%A1%E5%88%97%E8%A1%A8-%E6%8A%A5%E9%94%99"><span class="toc-number">4.</span> <span class="toc-text">任务列表 报错</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%9D%97%E7%9A%84%E4%BD%BF%E7%94%A8-%E4%B8%89%E4%B8%AA-96-%E5%8A%A0%E4%B8%8A%E8%AF%AD%E8%A8%80"><span class="toc-number">5.</span> <span class="toc-text">代码块的使用 三个&#96;加上语言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F"><span class="toc-number">6.</span> <span class="toc-text">数学公式</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%A1%A8%E6%A0%BC"><span class="toc-number">7.</span> <span class="toc-text">表格</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%A8%AA%E7%BA%BF%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">8.</span> <span class="toc-text">横线的使用</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%84%9A%E6%B3%A8%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">9.</span> <span class="toc-text">脚注的使用</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%93%BE%E6%8E%A5%E7%9A%84%E4%BD%BF%E7%94%A8-%E6%96%87%E5%AD%97-%EF%BC%88url%E5%9C%B0%E5%9D%80%E2%80%9C%E6%A0%87%E9%A2%98%E2%80%9D%EF%BC%89"><span class="toc-number">10.</span> <span class="toc-text">链接的使用  [文字] （url地址“标题”）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9B%BE%E7%89%87%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">11.</span> <span class="toc-text">图片的使用</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AD%97%E4%BD%93%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">12.</span> <span class="toc-text">字体的使用</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8F%A6%E7%B1%BB%E7%9A%84%E7%9F%A5%E8%AF%86"><span class="toc-number">13.</span> <span class="toc-text">另类的知识</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/03/23/MyFirstPage/04.test/" title="无题">无题</a><time datetime="2023-03-23T15:19:24.701Z" title="发表于 2023-03-23 23:19:24">2023-03-23</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/03/23/MyFirstPage/03.test/" title="无题">无题</a><time datetime="2023-03-23T15:19:20.404Z" title="发表于 2023-03-23 23:19:20">2023-03-23</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/03/23/MarkDown/knowMDBase/" title="快速实现markDown语法的使用">快速实现markDown语法的使用</a><time datetime="2023-03-23T14:06:19.902Z" title="发表于 2023-03-23 22:06:19">2023-03-23</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/03/23/MyFirstPage/02.two/" title="welcome to second">welcome to second</a><time datetime="2023-03-23T13:59:24.942Z" title="发表于 2023-03-23 21:59:24">2023-03-23</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/03/23/MyFirstPage/01.page/" title="Hello World">Hello World</a><time datetime="2023-03-23T13:29:16.001Z" title="发表于 2023-03-23 21:29:16">2023-03-23</time></div></div></div></div></div></div></main><footer id="footer" style="background: linear-gradient(to top, #30cfd0 0%, #330867 100%);"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By student_zks</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Success is not final, failure is not fatal: It is the courage to continue that counts</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/medium-zoom/dist/medium-zoom.min.js"></script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: '',
+      appKey: '',
+      avatar: 'monsterid',
+      serverURLs: '',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !false) {
+  if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script id="canvas_nest" defer="defer" color="#c0f586" opacity="0.9" zIndex="-1" count="109" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-show-text.min.js" data-mobile="false" data-text="爱国,敬业,诚信,友善,富强,平等,文明,和谐," data-fontsize="25px" data-random="true" async="async"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
