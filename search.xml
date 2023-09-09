@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title></title>
+      <link href="/2023/09/09/MyFirstPage/HTTP%E7%8A%B6%E6%80%81%E7%A0%81%E5%A4%A7%E5%85%A8/"/>
+      <url>/2023/09/09/MyFirstPage/HTTP%E7%8A%B6%E6%80%81%E7%A0%81%E5%A4%A7%E5%85%A8/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Vue</title>
+      <link href="/2023/09/05/category/Vue/"/>
+      <url>/2023/09/05/category/Vue/</url>
+      
+        <content type="html"><![CDATA[<p>Vue (发音为 /vjuː/，类似 view) 是一款用于构建用户界面的JavaScript框架。它基于标准HTML、CSS和JavaScript构建，并提供了一套声明式的、组件化的编程模型，帮助开发者高效地开发用户界面。 [7]<br>Vue是一个独立的社区驱动的项目，它是由尤雨溪在2014年作为其个人项目创建， [5] 是一个成熟的、经历了无数实战考验的框架，它是目前生产环境中使用最广泛的JavaScript框架WD之一，可以轻松处理大多数web应用的场景，并且几乎不需要手动优化，并且Vue完全有能力处理大规模的应用。 [6]</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Vue </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Vue-router </tag>
+            
+            <tag> Vuex </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Javascript</title>
+      <link href="/2023/09/05/category/index/"/>
+      <url>/2023/09/05/category/index/</url>
+      
+        <content type="html"><![CDATA[<p>JavaScript（简称“JS”）是一种具有函数优先的轻量级，解释型或即时编译型的编程语言。虽然它是作为开发Web页面的脚本语言而出名，但是它也被用到了很多非浏览器环境中，JavaScript基于原型编程、多范式的动态脚本语言，并且支持面向对象、命令式、声明式、函数式编程范式。 [1]<br>JavaScript在1995年由Netscape公司的Brendan Eich，在网景导航者浏览器上首次设计实现而成。因为Netscape与Sun合作，Netscape管理层希望它外观看起来像Java，因此取名为JavaScript。但实际上它的语法风格与Self及Scheme较为接近。<br>JavaScript的标准是ECMAScript。截至2012年，所有浏览器都完整的支持ECMAScript 5.1，旧版本的浏览器至少支持ECMAScript 3标准。2015年6月17日，ECMA国际组织发布了ECMAScript的第六版，该版本正式名称为ECMAScript 2015，但通常被称为ECMAScript 6或者ES2015。 [1]</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> JavaScript </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JS </tag>
+            
+            <tag> ES6 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>VueX</title>
+      <link href="/2023/09/05/category/Vuex/"/>
+      <url>/2023/09/05/category/Vuex/</url>
+      
+        <content type="html"><![CDATA[<p>Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。它采用集中式存储管理应用的所有组件的状态，并以相应的规则保证状态以一种可预测的方式发生变化。</p><p>Vuex 是干什么的？</p><p>试想一下，如果在一个项目开发中频繁的使用组件传参的方式来同步data中的值，一旦项目变得很庞大，管理和维护这些值将是相当棘手的工作。为此，Vue为这些被多个组件频繁使用的值提供了一个统一管理的工具——VueX。</p><p>也就是说如果您需要构建一个中大型单页应用，您很可能会考虑如何更好地在组件外部管理数据状态，Vuex 将会成为自然而然的选择。</p><p>为什么使用Vuex ？</p><p>VueX状态自管理应用包含以下几个部分：</p><p>state，驱动应用的数据源；<br>view，以声明方式将 state 映射到视图；<br>actions，响应在 view 上的用户输入导致的状态变化。<br>我们知道Vue的理念就是单页面应用和单项数据流：</p><p>单项数据流<br>但是，当我们的应用遇到多个组件共享状态时，单向数据流的简洁性很容易被破坏：</p><p>1.多个视图依赖于同一状态。<br>2.来自不同视图的行为需要变更同一状态。<br>对于问题一，传参的方法对于多层嵌套的组件将会非常繁琐，并且对于兄弟组件间的状态传递无能为力。对于问题二，我们经常会采用父子组件直接引用或者通过事件来变更和同步状态的多份拷贝。以上的这些模式就会变得非常脆弱，通常会导致无法维护的代码。</p><p>因此，为了把组件的共享状态抽取出来，以一个全局单例模式管理就是诞生了 ，在这种模式下，我们的组件树构成了一个巨大的“视图”，不管在树的哪个位置，任何组件都能获取状态或者触发行为！</p><p>通过定义和隔离状态管理中的各种概念并通过强制规则维持视图和状态间的独立性，我们的代码将会变得更结构化且易维护。</p><p>这就是 Vuex 背后的基本思想</p><p>VueX中的核心内容</p><p>在VueX对象中，最重要的就是操作state中数据的方法集以及当我们需要对state中的数据需要加工的方法集来调整组件间数据的状态 ，而这些方法集的成员包括以下：</p><p>state 方法 用于存放数据状态<br>mutations方法 用于对state中的成员的操作 ，比如对该数据的修改、增加、删除等等。<br>getters方法 用于加工state成员给组件展示<br>actions方法 用于state成员的一些异步操作 ，由于直接在mutations方法中进行异步操作，将会引起数据失效。所以提供了Actions来专门进行异步操作，最终提交方法。<br>modules 模块化状态管理</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Vue </category>
+          
+          <category> Vuex </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Store </tag>
+            
+            <tag> getter </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>快速实现markDown语法的使用</title>
+      <link href="/2023/09/04/MarkDown/knowMDBase/"/>
+      <url>/2023/09/04/MarkDown/knowMDBase/</url>
+      
+        <content type="html"><![CDATA[<p>8分钟简单了解一下Markdown语法的使用教程,参考网站<a href="https://www.jianshu.com/p/599857933f6e">markdown</a></p><h1 id="标题的使用教程"><a href="#标题的使用教程" class="headerlink" title="标题的使用教程"></a>标题的使用教程</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">一个<span class="comment">#代表的是代表的是一级标题 </span></span><br><span class="line">两个、甚至三个代表二级和三级标题，以此类推。。。。</span><br></pre></td></tr></table></figure><h1 id="gt-表示引用一个段话"><a href="#gt-表示引用一个段话" class="headerlink" title="&gt;表示引用一个段话"></a>&gt;表示引用一个段话</h1><blockquote><p>这是一段名人名言,谁说的我说的</p></blockquote><h1 id="无序列表和有序列表的使用"><a href="#无序列表和有序列表的使用" class="headerlink" title="无序列表和有序列表的使用"></a>无序列表和有序列表的使用</h1><blockquote><p>One:有序列表 这是一个无序列表:</p><ol><li>this is One</li><li>this is two </li><li>this is three</li><li>this is four </li><li>this is five</li><li>this is six ….</li></ol><p>Two:无序列表 这是一个无序列表 使用- 或者 + * :</p><ul><li>this is One</li><li>this is two </li></ul><ul><li>this is three ….</li></ul></blockquote><h1 id="任务列表-报错"><a href="#任务列表-报错" class="headerlink" title="任务列表 报错"></a>任务列表 报错</h1><blockquote><p>任务列表 使用 -[] :</p><ul><li>[] 吃饭</li><li>[x] 吃饭</li><li>[x] 吃饭</li></ul></blockquote><h1 id="代码块的使用-三个-加上语言"><a href="#代码块的使用-三个-加上语言" class="headerlink" title="代码块的使用 三个`加上语言"></a>代码块的使用 三个`加上语言</h1><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> title=input.<span class="property">value</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(title);</span><br></pre></td></tr></table></figure><h1 id="数学公式"><a href="#数学公式" class="headerlink" title="数学公式"></a>数学公式</h1><blockquote><script type="math/tex; mode=display">数学公式</script></blockquote><h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><blockquote><p>:在左边表示左对齐 :在中间表示居中 :在右边表示 右对齐</p></blockquote><div class="table-container"><table><thead><tr><th style="text-align:left">姓名</th><th style="text-align:right">年龄</th><th style="text-align:center">成绩</th><th style="text-align:left">籍贯</th></tr></thead><tbody><tr><td style="text-align:left">张三</td><td style="text-align:right">19</td><td style="text-align:center">99</td><td style="text-align:left">江苏省邳州市宿羊山</td></tr></tbody></table></div><h1 id="横线的使用"><a href="#横线的使用" class="headerlink" title="横线的使用"></a>横线的使用</h1><hr><h1 id="脚注的使用"><a href="#脚注的使用" class="headerlink" title="脚注的使用"></a>脚注的使用</h1><p>一键三连 <sup><a href="#fn_三联" id="reffn_三联">三联</a></sup></p><h1 id="链接的使用-文字-（url地址“标题”）"><a href="#链接的使用-文字-（url地址“标题”）" class="headerlink" title="链接的使用  [文字] （url地址“标题”）"></a>链接的使用  [文字] （url地址“标题”）</h1><p><a href="http://www.baidu.com" title="一个搜索引擎">百度</a>;</p><blockquote><p>引用链接 使用id <a href="http://www.baidu.com" title="搜索">谷歌</a><br> <a href="http://www.baidu.com" title="搜索">谷歌</a></p></blockquote><p> 请参考<a href="#标题的使用教程">标题1</a></p><h1 id="图片的使用"><a href="#图片的使用" class="headerlink" title="图片的使用"></a>图片的使用</h1><blockquote><p>![]  (链接)</p></blockquote><p><img src="https://www.baidu.com/img/flexible/logo/pc/result.png" alt="qq头像" title="百度一下"></p><h1 id="字体的使用"><a href="#字体的使用" class="headerlink" title="字体的使用"></a>字体的使用</h1><p>指定字体类型： <font face="黑体">我是黑体字</font><br>指定字体大小： <font size=12>我是12号字</font><br>指定字体颜色：<font color=#0099ff>我是蓝色字</font> #0099ff 为颜色的16进制代码<br>指定字体颜色、字号、字体类型<font color=#0099ff size=12 face="黑体">黑体</font></p><h1 id="另类的知识"><a href="#另类的知识" class="headerlink" title="另类的知识"></a>另类的知识</h1><p>斜体 <em>斜体</em><br>加粗 <strong>加粗</strong><br><code>print(5)</code><br>下划线 <u>下划线</u><br>微表情 :grin:<br>下标~~   H~2~O  H<sub>2</sub>O<br>上标^^  X^2^ 这里没能实 现 采用HTML格式   2<sup>10</sup><br>高亮文字  <mark>这是使用了mark标签</mark></p><p>脚注跳转这里好像不能实现 <sup><a href="#fn_三联" id="reffn_三联">三联</a></sup>:点赞、投币、收藏</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>外挂标签</title>
+      <link href="/2023/09/04/MarkDown/%E5%A4%96%E6%8C%82%E6%A0%87%E7%AD%BE%E6%BC%94%E7%A4%BA/"/>
+      <url>/2023/09/04/MarkDown/%E5%A4%96%E6%8C%82%E6%A0%87%E7%AD%BE%E6%BC%94%E7%A4%BA/</url>
+      
+        <content type="html"><![CDATA[<div class="note red icon-padding simple"><i class="note-icon fas fa-fan"></i><p>这是三片呢？还是四片？</p></div><div class="timeline blue"><div class='timeline-item headline'><div class='timeline-item-title'><div class='item-circle'><p>时间轴样式</p></div></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>2020-07-24 <a href="https://github.com/volantis-x/hexo-theme-volantis/releases">2.6.6 -&gt; 3.0</a></p></div></div><div class='timeline-item-content'><ol><li>如果有 <code>hexo-lazyload-image</code> 插件，需要删除并重新安装最新版本，设置 <code>lazyload.isSPA: true</code>。</li><li>2.x 版本的 css 和 js 不适用于 3.x 版本，如果使用了 <code>use_cdn: true</code> 则需要删除。</li><li>2.x 版本的 fancybox 标签在 3.x 版本中被重命名为 gallery 。</li><li>2.x 版本的置顶 <code>top: true</code> 改为了 <code>pin: true</code>，并且同样适用于 <code>layout: page</code> 的页面。</li><li>如果使用了 <code>hexo-offline</code> 插件，建议卸载，3.0 版本默认开启了 pjax 服务。</li></ol></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>2020-05-15 <a href="https://github.com/volantis-x/hexo-theme-volantis/releases/tag/2.6.6">2.6.3 -&gt; 2.6.6</a></p></div></div><div class='timeline-item-content'><p>不需要额外处理。</p></div></div><div class='timeline-item'><div class='timeline-item-title'><div class='item-circle'><p>2020-04-20 <a href="https://github.com/volantis-x/hexo-theme-volantis/releases/tag/2.6.3">2.6.2 -&gt; 2.6.3</a></p></div></div><div class='timeline-item-content'><ol><li>全局搜索 <code>seotitle</code> 并替换为 <code>seo_title</code>。</li><li>group 组件的索引规则有变，使用 group 组件的文章内，<code>group: group_name</code> 对应的组件名必须是 <code>group_name</code>。</li><li>group 组件的列表名优先显示文章的 <code>short_title</code> 其次是 <code>title</code>。</li></ol></div></div></div>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2023/09/04/MyFirstPage/01.page/"/>
+      <url>/2023/09/04/MyFirstPage/01.page/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo初体验 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> First </tag>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Two Page</title>
+      <link href="/2023/09/04/MyFirstPage/02.two/"/>
+      <url>/2023/09/04/MyFirstPage/02.two/</url>
+      
+        <content type="html"><![CDATA[<hr><p>欢迎来到我的第二个界面</p><h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post</span></span><br></pre></td></tr></table></figure><p><img src="https://www.baidu.com/img/flexible/logo/pc/result.png" alt="百度"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo初体验 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> First </tag>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>welcome to five</title>
+      <link href="/2023/09/02/MyFirstPage/05.zksx/"/>
+      <url>/2023/09/02/MyFirstPage/05.zksx/</url>
+      
+        <content type="html"><![CDATA[<p>欢迎来到我的第五个个界面</p><h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post</span></span><br></pre></td></tr></table></figure><p><img src="https://www.baidu.com/img/flexible/logo/pc/result.png" alt="百度"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
